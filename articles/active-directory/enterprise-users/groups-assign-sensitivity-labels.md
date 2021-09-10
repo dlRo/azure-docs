@@ -40,7 +40,7 @@ To apply published labels to groups, you must first enable the feature. These st
 1. Fetch the current group settings for the Azure AD organization.
 
     ```PowerShell
-    $Setting = Get-AzureADDirectorySetting -Id (Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ).id
+    $Setting = Get-AzureADDirectorySetting -ObjectId (Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ).id
     ```
 
     > [!NOTE]
